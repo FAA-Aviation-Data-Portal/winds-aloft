@@ -1,7 +1,7 @@
 {
   "name": "@faa-aviation-data-portal/winds-aloft",
   "description": "Get Winds and Temps Aloft data from https://api.weather.gov",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Forrest Desjardins",
     "email": "desjardinsfg@gmail.com",
