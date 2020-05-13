@@ -203,6 +203,10 @@ const buildUtcTime = (baseDateString, utcTimeString, advanceDate = false) => {
 const getProductById = async id => {
   const product = await fetch(`/products/${id}`)
 
+  if (product === undefined) {
+    return null
+  }
+
   const parsedProductText = parseProductText(product.productText)
 
   parsedProductText.header.dataBasedOn = buildUtcTime(
@@ -274,5 +278,7 @@ exports.FD1 = async ({
     return true
   })
 
-  return Promise.all(products.map(product => getProductById(product.id)))
+  const results = await Promise.all(products.map(product => getProductById(product.id)))
+
+  return results.filter(result => result !== null)
 }
