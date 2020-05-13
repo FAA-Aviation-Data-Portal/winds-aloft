@@ -2,6 +2,9 @@
 
 Get Winds and Temps Aloft data from api.weather.gov
 
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][build-image]][build-url]
+
 ## Installation
 
 ```sh
@@ -76,3 +79,8 @@ winds
 ## License
 
 MIT © [Forrest Desjardins](https://github.com/fdesjardins)
+
+[build-url]: https://github.com/FAA-Aviation-Data-Portal/winds-aloft/actions?query=workflow%3A%22build%22
+[build-image]: https://github.com/FAA-Aviation-Data-Portal/winds-aloft/workflows/build/badge.svg?branch=master&style=flat
+[npm-url]: https://www.npmjs.com/package/@faa-aviation-data-portal/winds-aloft
+[npm-image]: https://img.shields.io/npm/v/@faa-aviation-data-portal/winds-aloft.svg?style=flat
