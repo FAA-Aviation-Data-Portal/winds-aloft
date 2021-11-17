@@ -8,13 +8,13 @@
     "url": "github.com/fdesjardins"
   },
   "dependencies": {
-    "superagent": "^5.2.2"
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
-    "coveralls": "^3.1.0",
-    "mocha": "^7.1.2",
-    "nyc": "^15.0.1",
-    "standard": "^14.3.4"
+    "coveralls": "^3.1.1",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "standard": "^16.0.4"
   },
   "engines": {
     "node": ">=10"
