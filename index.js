@@ -95,7 +95,7 @@ const determineElementLocations = headerRow => {
   const headers = headerRow.split(' ').filter(x => x !== 'FT' && x.length > 0)
 
   const indices = {}
-  headers.map((header, headerIndex) => {
+  headers.forEach((header, headerIndex) => {
     const index = headerRow.indexOf(` ${header}`) + 1
     const lastIndex =
       headerIndex === 0
@@ -121,7 +121,7 @@ const parseDataBlock = dataBlock => {
   for (const row of data) {
     const station = row.slice(0, 3)
     parsed[station] = {}
-    Object.keys(elementLocations).map(k => {
+    Object.keys(elementLocations).forEach(k => {
       const [ start, end ] = elementLocations[k]
       parsed[station][k] = parseElement(row.slice(start, end))
     })
