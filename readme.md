@@ -1,3 +1,6 @@
+⚠️ This project has been deprecated. ⚠️
+**This package is no longer being maintained and will be deleted in 30 days.**
+
 # winds-aloft
 
 Get Winds and Temps Aloft data from api.weather.gov
